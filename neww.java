@@ -25,6 +25,12 @@ public class CanAttend {
 			meet.add(new MeetingInterval(start, end));
 		}
 		System.out.println(canAttend(meet) ? "There is no conflict with attending "+meet+" meetings":"Can't attend "+meet+" meetings due to conflict");
+		ArrayList<MeetingInterval> test = new ArrayList<>();
+        test.add(new MeetingInterval(100, 200));
+        test.add(new MeetingInterval(150, 250));
+        System.out.println("Manual test (should be false): " + canAttend(test));
 	
+
 	}
+	
 }
